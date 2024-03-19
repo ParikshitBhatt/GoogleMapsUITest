@@ -14,6 +14,12 @@ jobs:
 
     runs-on: windows-latest
 
+    env:
+      BROWSERSTACK_USERNAME: your_username
+      BROWSERSTACK_ACCESS_KEY: your_access_key
+      EXECUTION_ENVIRONMENT: Local
+      BROWSER_NAME: Chrome
+      
     steps:
     - uses: actions/checkout@v4
     - name: Setup .NET
